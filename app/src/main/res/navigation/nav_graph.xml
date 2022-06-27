@@ -17,5 +17,14 @@
         android:id="@+id/loginFragment"
         android:name="com.example.esocial.fragments.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_register"
+            app:destination="@id/register" />
+    </fragment>
+    <fragment
+        android:id="@+id/register"
+        android:name="com.example.esocial.fragments.Register"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
 </navigation>
